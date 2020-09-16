@@ -1,2 +1,1 @@
 # CompetitiveProgrammingCourse
-# CompetitiveProgrammingCourse
