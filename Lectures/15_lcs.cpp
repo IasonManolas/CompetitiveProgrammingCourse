@@ -24,7 +24,7 @@ int main() {
 int lcs(int x, int y, string s1, string s2) {
   vector<vector<size_t>> M(x + 1, std::vector<size_t>(y + 1, 0));
 
-//O(x*y)
+//θ(x*y) time complexity
 //cell M[i][j] contains the lcs of the s1[0:i] and s2[0:j]. Thus the
 //bottom right cell contains the lcs of the full strings s1,s2
   for (size_t i = 0; i < x + 1; i++) {
