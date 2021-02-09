@@ -13,8 +13,12 @@ typedef pair<int, int> pi;
 
 int MissingNumber(vector<int> &array, int n);
 
-// Position this line where user code will be pasted.
-
+/*
+* The sum of n successive numbers is given by n*(n+1)/2. Thus we simply compute the difference between
+* this number and the sum of the elements of the array.
+* Time complexity: Θ(n) since we go through the array
+* Space complexity: Θ(1) no additional space is required
+*/
 int main() {
   int t;
   cin >> t;

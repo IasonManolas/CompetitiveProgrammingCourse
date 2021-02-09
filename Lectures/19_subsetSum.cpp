@@ -12,7 +12,7 @@ using namespace std;
  * sum of value j-arr[i]. If the answer to one of the previous is yes then the
  * value M[i][j] is also yes. Otherwise the answer is no.
  *
- * Time complexity:
+ * Time and space complexity:
  * θ(arraySum*N) for filling the matrix M
  * */
 class Solution {

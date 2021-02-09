@@ -12,8 +12,7 @@ using namespace std;
  * ends of the substring we are flipping (since the number of alternating bits
  * within the substring do not change by flipping them).
  *
- * Time complexity: θ(n) for computing the initially longest alternating
- * sequence
+ * Time and space complexity are θ(n).
  * */
 
 int main() {

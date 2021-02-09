@@ -18,7 +18,7 @@ typedef pair<int64_t, int64_t> pi;
  * can apply the update operations on that array in O(1). We do that for update
  * op [l,r,v] by adding v to diffArray[l] and substracting v from
  * diffArray[r+1]. We then reconstruct the array from the diffArray in O(n)
- * time. Overall time complexity: θ(n) if n>q && n>u
+ * time. Overall time and space complexity: θ(n) if n>q && n>u
  * */
 
 int main() {

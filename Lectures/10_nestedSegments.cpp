@@ -19,7 +19,8 @@ typedef pair<int64_t, int64_t> pi;
  * larger left-end and smaller right-end. Using the fenwock tree this query can
  * processed in θ(logn) time by using the Sum(right-end-sorted-index) function
  * and the index of the segments in the right-end sorted vector. Overall time
- * complexity: θ(nlogn)
+ * complexity: θ(nlogn) 
+ * space complexity is O(n)
  * */
 struct Segment {
   int64_t l;

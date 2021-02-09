@@ -20,7 +20,8 @@ typedef pair<int64_t, int64_t> pi;
  * area between the two towers. The area is essentialy the width(how far apart
  * the towers are to each other)x the size of the smallest tower minus the
  * blocks in between the towers. θ(n) For computing the result we sum the water
- * collected by all the consecutive tower pairs. overall time complexity: θ(n)
+ * collected by all the consecutive tower pairs. overall time complexity: θ(n).
+ * Space complexity: Θ(n) since we require θ(n) additional space for save the vetor of towers
  * */
 int main() {
   int64_t t;

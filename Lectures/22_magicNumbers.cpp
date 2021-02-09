@@ -9,7 +9,7 @@ using namespace std;
  * three I check if each digit complies with one of the allowed states: Only
  * digits of value 1 or 4 are allowed. If the value of digit is 4 the previously
  * consecutive encountered fours cannot be more than 2 in a row. The first digit
- * can only have the value 1. Time complexity θ(n)
+ * can only have the value 1. Time and space complexity θ(n)
  * */
 
 int main() {

@@ -43,7 +43,7 @@ struct ValueIndexComp {
 // predecessor query for finding which previous element the ith element of the
 // array
 // can extend. This costs θ(logn) for each element. Thus the overall complexity
-// of the solution is θ(nlogn).
+// of the solution is θ(nlogn). Space complexity Θ(n)
 int longestSubsequence(int n, int a[]) {
   std::vector<int> lis(n);
   using Index = int;

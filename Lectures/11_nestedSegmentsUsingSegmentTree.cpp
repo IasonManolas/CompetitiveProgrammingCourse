@@ -20,40 +20,12 @@ typedef pair<int64_t, int64_t> pi;
  * processed in θ(logn) time by using the Sum(right-end-sorted-index) function
  * and the index of the segments in the right-end sorted vector. Overall time
  * complexity: θ(nlogn)
+ *Space complexity Θ(n) since we use a segment tree
  * */
 struct Segment {
   int64_t l;
   int64_t r;
   int64_t index;
-};
-
-struct FenwickTree {
-  vector<int> bit; // binary indexed tree
-  int n;
-
-  FenwickTree(int n) {
-    this->n = n;
-    bit.assign(n, 0);
-  }
-
-  FenwickTree(vector<Segment> a) : FenwickTree(a.size()) {
-    for (size_t i = 0; i < a.size(); i++)
-      add(i, a[i].r);
-  }
-
-  int sum(int r) {
-    int ret = 0;
-    for (; r >= 0; r = (r & (r + 1)) - 1)
-      ret += bit[r];
-    return ret;
-  }
-
-  int sum(int l, int r) { return sum(r) - sum(l - 1); }
-
-  void add(int idx, int delta) {
-    for (; idx < n; idx = idx | (idx + 1))
-      bit[idx] += delta;
-  }
 };
 
 struct SegmentLCompare {

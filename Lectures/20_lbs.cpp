@@ -47,7 +47,7 @@ public:
    * the lis algorithm. Finally to compute the lbs I compute for each index i
    * the sum: lis[i]+lds[i]-1 and keep the maximum (-1 because the index of the
    * peak is used in both the lds and lis). The total time complexity is
-   * Θ(nlogn+nlogn+n)=θ(nlogn)
+   * Θ(nlogn+nlogn+n)=θ(nlogn). space complexity:θ(n)
    * */
   int LongestBitonicSequence(vector<int> nums) {
     vector<int> reversed_nums(nums.rbegin(), nums.rend());

@@ -6,7 +6,7 @@ using namespace std;
 /*
  * I use the lcs algorithm implemented in a previous lecture for finding the
  * longest common subsequence between the given string and the reversed string.
- * The time complexity is θ(n^2) where n is the length of the string.
+ * The time and space complexity is θ(n^2) where n is the length of the string.
  * */
 int lcs(int x, int y, string s1, string s2) {
   vector<vector<size_t>> M(x + 1, std::vector<size_t>(y + 1, 0));

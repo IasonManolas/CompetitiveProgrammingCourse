@@ -7,8 +7,8 @@ using namespace std;
  * reach from each cell (saved in maxReached). We keep track of how many steps
  * we have done from the previous maxReach (saved in steps) and update it every
  * time the number of steps is equal to the number of steps the last maxReach
- * allows us (steps==0). Time complexity: θ(n) since the function breaks early
- * as soon as a jump is found with which the last element can be reached.
+ * allows us (steps==0). Time (and space complexity) is θ(n) since the function breaks early
+ * as soon as a jump is found with which the last element can be reached. 
  * */
 
 // Function to return minimum number of jumps to end of array

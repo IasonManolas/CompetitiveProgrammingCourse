@@ -6,7 +6,7 @@ using namespace std;
 /*
  * We transform a to b from the leftmost to the rightmost digit.The number of
  * steps needed to transform a_i to b_i is abs(b_(i-1)-b_i). Time complexity:
- * θ(n)
+ * θ(n). Space complexity: θ(n)
  * */
 
 int main() {
