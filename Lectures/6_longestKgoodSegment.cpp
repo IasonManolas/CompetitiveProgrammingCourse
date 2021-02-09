@@ -14,7 +14,7 @@ using namespace std;
  * rigth-end index the maximum k-good segment for the subarray [0,r] is formed.
  * Thus it has gone through all k-good segments of the whole array when r
  * reaches n. Time complexity is θ(n) since each element can be added and
- * removed at most once from the sliding window.
+ * removed at most once from the sliding window. Space complexity is θ(n)
  * */
 
 unordered_map<int64_t, int64_t> segmentElementFrequecies;

@@ -2,6 +2,19 @@
 #include <iostream>
 #include <vector>
 
+/*
+ * We use merge sort for counting the number of inversions. During the merge
+ * step if we find that an element l in the left subarray is bigger than the
+ * element in the right subarray r we increase the number of inversions by the
+ * number of elements in the left subarray that come after the element we are
+ * currently examining. We do that because since the two subarrays are sorted
+ * all elements that come after element l will be greater than r and thus in the
+ * merged array will come after r and thus will require inversions.
+ *
+ * Time complexity is the same as for merge sort O(nlogn) since we have logn
+ * levels of d&c and each level processes n elements. Space complexity is θ(n)
+ * */
+
 std::vector<size_t> merge(const std::vector<size_t> &v, const size_t &p,
                           const size_t &q, const size_t &r,
                           size_t &numOfInversions) {

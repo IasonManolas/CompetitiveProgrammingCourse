@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
-
 using namespace std;
+
+/*
+ * We use a greedy approach and choose the meetings by the earliest ending time.
+ * Time complexity is O(nlogn) for sorting the meetings
+ * Space complexity Θ(n)
+ * */
 
 void maxMeetings(int *, int *, int);
 

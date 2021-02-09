@@ -5,7 +5,6 @@
 #include <numeric>
 #include <unordered_set>
 #include <vector>
-
 using namespace std;
 
 template <typename T> vector<T> get_input_sequence(size_t n) {
@@ -15,6 +14,14 @@ template <typename T> vector<T> get_input_sequence(size_t n) {
     cin >> sequence[i];
   return sequence;
 }
+
+/*
+ * Using prefix sums we compute the number of times each element is queried and
+ * then we construct the result by sorting the frequencies, the given vector and
+ * by computing the product of those and adding it to the result. The bottleneck
+ * is the sorting of frequencies and of the given vector. Time complexity is
+ * O(nlogn). Space complexity is θ(n)
+ * */
 
 int main() {
   std::ios_base::sync_with_stdio(false);
@@ -33,8 +40,8 @@ int main() {
     cin >> l;
     cin >> r;
     c[l - 1]++; // l and r are not zero based
-    if (r < n)  // right index is not the last element
-      c[r]--;   // decrease by so that the prefix sum does not propagate
+    if (r < n)  // if right index is not the last element
+      c[r]--;   // decrease by 1 so that the prefix sum does not propagate
                 // c[l]++
   }
 

@@ -21,7 +21,7 @@ typedef vector<int64_t> vi;
  * for adding θ(logn)
  * for answering a query θ(logn)
  * Overall:θ(n)+θ(2*m*logn)=θ(n+mlogn)
- * space complexity is Ο(n) since segment trees require O(n) space 
+ * space complexity is θ(n) since segment trees require θ(n) space
  * */
 struct node {
   int64_t l, r, minimum, propagationValue;
